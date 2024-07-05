@@ -1,0 +1,107 @@
+- alias: 'Control Lights'
+  trigger:
+    platform: mqtt
+    topic: 'homeassistant/voice_commands'
+  action:
+    - service_template: >
+        {% if 'enciende_light' in trigger.payload %}
+          light.turn_on
+        {% elif 'apaga_light' in trigger.payload %}
+          light.turn_off
+        {% endif %}
+      target:
+        entity_id: >
+          {% if 'sal�n' in trigger.payload %}
+            light.living_room
+          {% elif 'dormitorio grande' in trigger.payload %}
+            light.master_bedroom
+          {% elif 'dormitorio peque�o' in trigger.payload %}
+            light.small_bedroom
+          {% elif 'entrada' in trigger.payload %}
+            light.entry
+          {% elif 'escalera' in trigger.payload %}
+            light.stairs
+          {% elif 'pasillo' in trigger.payload %}
+            light.hallway
+          {% elif 'aseo' in trigger.payload %}
+            light.toilet
+          {% elif 'ba�o' in trigger.payload %}
+            light.bathroom
+          {% elif 'cocina' in trigger.payload %}
+            light.kitchen
+          {% elif 'buhardilla' in trigger.payload %}
+            light.attic
+          {% endif %}
+
+- alias: 'Set Temperature'
+  trigger:
+    platform: mqtt
+    topic: 'homeassistant/voice_commands'
+  action:
+    - service: climate.set_temperature
+      target:
+        entity_id: climate.thermostat
+      data_template:
+        temperature: "{{ trigger.payload.split(' ')[1] }}"
+
+- alias: 'Control Volume'
+  trigger:
+    platform: mqtt
+    topic: 'homeassistant/voice_commands'
+  action:
+    - service_template: >
+        {% if 'sube_volume' in trigger.payload %}
+          media_player.volume_up
+        {% elif 'baja_volume' in trigger.payload %}
+          media_player.volume_down
+        {% endif %}
+      target:
+        entity_id: >
+          {% if 'apple tv' in trigger.payload %}
+            media_player.apple_tv
+          {% elif 'tele del sal�n' in trigger.payload %}
+            media_player.living_room_tv
+          {% elif 'tele del dormitorio' in trigger.payload %}
+            media_player.bedroom_tv
+          {% elif 'tele de la buhardilla' in trigger.payload %}
+            media_player.attic_tv
+          {% elif 'cadena de musica' in trigger.payload %}
+            media_player.music_system
+          {% endif %}
+
+- alias: 'Control Alarm'
+  trigger:
+    platform: mqtt
+    topic: 'homeassistant/voice_commands'
+  action:
+    - service_template: >
+        {% if 'activa_alarm' in trigger.payload %}
+          alarm_control_panel.alarm_arm_away
+        {% elif 'desactiva_alarm' in trigger.payload %}
+          alarm_control_panel.alarm_disarm
+        {% endif %}
+      target:
+        entity_id: alarm_control_panel.home_alarm
+
+- alias: 'Control Devices'
+  trigger:
+    platform: mqtt
+    topic: 'homeassistant/voice_commands'
+  action:
+    - service_template: >
+        {% if 'enciende' in trigger.payload %}
+          switch.turn_on
+        {% elif 'apaga' in trigger.payload %}
+          switch.turn_off
+        {% endif %}
+      target:
+        entity_id: >
+          {% if 'cadena de musica' in trigger.payload %}
+            switch.music_system
+          {% elif 'tele del sal�n' in trigger.payload %}
+            switch.living_room_tv
+          {% elif 'tele del dormitorio' in trigger.payload %}
+            switch.bedroom_tv
+          {% elif 'tele de la buhardilla' in trigger.payload %}
+            switch.attic_tv
+          {% endif %}

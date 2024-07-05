@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "minor_version": 6,
+  "key": "core.area_registry",
+  "data": {
+    "areas": [
+      {
+        "aliases": [],
+        "floor_id": null,
+        "icon": null,
+        "id": "salon",
+        "labels": [],
+        "name": "Salón",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "floor_id": null,
+        "icon": null,
+        "id": "cocina",
+        "labels": [],
+        "name": "Cocina",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "floor_id": null,
+        "icon": null,
+        "id": "dormitorio",
+        "labels": [],
+        "name": "Dormitorio",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "floor_id": "segunda",
+        "icon": "mdi:desk-lamp-on",
+        "id": "buhardilla",
+        "labels": [],
+        "name": "Buhardilla",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "floor_id": null,
+        "icon": null,
+        "id": "apple_tv_salon",
+        "labels": [],
+        "name": "Apple TV (Salón)",
+        "picture": null
+      }
+    ]
+  }
+}

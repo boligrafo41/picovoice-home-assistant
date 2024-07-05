@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "auth_provider.homeassistant",
+  "data": {
+    "users": [
+      {
+        "username": "ovidio",
+        "password": "JDJiJDEyJERpZUdzRHFEd29FUHI4ano4bWZ0Ry5TSzFHdUI2cC9SMEtwV0xkdE9vR0J0Y1BmWkpkczZ5"
+      }
+    ]
+  }
+}

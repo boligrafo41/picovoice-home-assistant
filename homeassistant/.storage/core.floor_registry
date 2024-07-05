@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.floor_registry",
+  "data": {
+    "floors": [
+      {
+        "aliases": [],
+        "floor_id": "segunda",
+        "icon": null,
+        "level": 2,
+        "name": "Segunda"
+      }
+    ]
+  }
+}

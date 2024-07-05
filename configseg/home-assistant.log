@@ -1,0 +1,2 @@
+2024-06-15 21:50:48.986 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
+2024-06-15 21:52:01.162 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 64243

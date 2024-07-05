@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "id": "ovidio",
+        "name": "ovidio",
+        "user_id": "325e275b169f4fb4a85c6a508e200676",
+        "device_trackers": [
+          "device_tracker.iphone_de_ovidio_miguel"
+        ]
+      }
+    ]
+  }
+}

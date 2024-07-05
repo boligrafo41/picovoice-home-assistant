@@ -1,0 +1,32 @@
+version: '3'
+services:
+  homeassistant:
+    container_name: homeassistant1
+    image: "ghcr.io/home-assistant/home-assistant:stable"
+    volumes:
+      - ./homeassistant:/config
+      - /etc/localtime:/etc/localtime:ro
+      - /run/dbus:/run/dbus:ro
+    restart: unless-stopped
+    privileged: true
+    network_mode: host
+
+  picovoice:
+    build:
+      context: ./picovoice
+    container_name: picovoice
+    volumes:
+      - ./picovoice/config:/app/config
+    environment:
+      - MQTT_BROKER_ADDRESS=192.168.1.62
+      - MQTT_BROKER_PORT=1883
+      - PICOVOICE_ACCESS_KEY=05nuxDRAVjboy6biLTuc/Sy+aHgxCEp00ZM7kDjnibTrXD0QVCbLhw==
+    devices:
+      - "/dev/snd:/dev/snd"
+    privileged: true  # el contenedor tiene privilegios elevados
+    networks:
+      - home_net
+
+networks:
+  home_net:
+    external: true
