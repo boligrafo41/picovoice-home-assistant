@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+*.venv
+.env
+.venv
+env/
+venv/
+ENV/
+VENV/
+env.bak/
+venv.bak/
+
+# Docker
+docker-compose.override.yml
+docker-compose.local.yml
+docker-compose.local.override.yml
+
+# Miscellaneous
+.DS_Store
+*.log
+*.sqlite3
+
+# Virtual Environment
+.env
+venv/
+ENV/

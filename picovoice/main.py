@@ -5,7 +5,7 @@ import struct
 import pyaudio
 import os
 
-# Environment variables for MQTT broker and Picovoice Access Key
+# Configuracion de variables para MQTT broker y Picovoice (Access Key)
 MQTT_BROKER_ADDRESS = os.getenv('MQTT_BROKER_ADDRESS', '192.168.1.62')
 MQTT_BROKER_PORT = int(os.getenv('MQTT_BROKER_PORT', 1883))
 PICOVOICE_ACCESS_KEY= os.getenv('PICOVOICE_ACCESS_KEY', '05nuxDRAVjboy6biLTuc/Sy+aHgxCEp00ZM7kDjnibTrXD0QVCbLhw==')
@@ -16,20 +16,20 @@ if not PICOVOICE_ACCESS_KEY:
 print(f"Using Picovoice Access Key: {PICOVOICE_ACCESS_KEY}")
 
 
-# Configuracón de los ficheros Porcupine y Rhino
+# Configuración de los ficheros Porcupine y Rhino
 PORCUPINE_MODEL_FILE_PATH = "config/Beltran_es_raspberry-pi_v3_0_0.ppn"
 RHINO_MODEL_FILE_PATH = "config/Domotica_es_raspberry-pi_v3_0_0.rhn"
 PORCUPINE_MODEL_FILE_PATH_ES = "config/porcupine_params_es.pv"
 RHINO_MODEL_FILE_PATH_ES = "config/rhino_params_es.pv"
 
-# Inicializar Porcupine para la detecciï¿½n de la palabra clave
+# Inicializacion de Porcupine para la detecciï¿½n de la palabra clave
 porcupine = pvporcupine.create(
     access_key=PICOVOICE_ACCESS_KEY,
     keyword_paths=[PORCUPINE_MODEL_FILE_PATH],
     model_path=PORCUPINE_MODEL_FILE_PATH_ES
 )
 
-# Inicializar rhino para Speech-to-Intent
+# Inicializacion de rhino para Speech-to-Intent
 rhino = pvrhino.create(
     access_key=PICOVOICE_ACCESS_KEY,
     context_path=RHINO_MODEL_FILE_PATH,
@@ -37,7 +37,7 @@ rhino = pvrhino.create(
 )
 
 
-# Configurar PyAudio para captura de audio
+# Configuracion de PyAudio para captura de audio
 pa = pyaudio.PyAudio()
 audio_stream = pa.open(
     rate=porcupine.sample_rate,
@@ -67,7 +67,7 @@ mqtt_client.connect(MQTT_BROKER_ADDRESS, MQTT_BROKER_PORT, 60)
 mqtt_client.loop_start()
 
 
-
+#Conversion de intenciones en Rhino a mensajeria MQTT
 def process_intent(intent):
     """
     Procesa la intenciï¿½n y publica el mensaje MQTT correspondiente.

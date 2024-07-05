@@ -37,3 +37,6 @@
 2024-07-05 11:03:04.515 WARNING (MainThread) [homeassistant.components.broadlink.updater] Disconnected from HVAC-HV2 (HY02/HY03 at 192.168.1.88)
 2024-07-05 11:05:14.719 WARNING (MainThread) [homeassistant.components.broadlink.updater] Connected to HVAC-HV2 (HY02/HY03 at 192.168.1.88)
 2024-07-05 11:09:18.015 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 62207
+2024-07-05 15:39:21.529 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 13065
+2024-07-06 00:24:33.567 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 62453
+2024-07-06 01:31:35.589 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 62453
