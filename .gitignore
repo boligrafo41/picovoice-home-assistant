@@ -33,3 +33,4 @@ ENV/
 homeassistant/.storage/auth
 #picovoice
 /docker/picovoice/config
+configseg/home-assistant.log.1
