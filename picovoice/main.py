@@ -8,7 +8,7 @@ import os
 # Configuracion de variables para MQTT broker y Picovoice (Access Key)
 MQTT_BROKER_ADDRESS = os.getenv('MQTT_BROKER_ADDRESS', '192.168.1.62')
 MQTT_BROKER_PORT = int(os.getenv('MQTT_BROKER_PORT', 1883))
-PICOVOICE_ACCESS_KEY= os.getenv('PICOVOICE_ACCESS_KEY', '05nuxDRAVjboy6biLTuc/Sy+aHgxCEp00ZM7kDjnibTrXD0QVCbLhw==')
+PICOVOICE_ACCESS_KEY= os.getenv('PICOVOICE_ACCESS_KEY', '0==KEY_PICOVOICE')
 
 if not PICOVOICE_ACCESS_KEY:
     raise ValueError("PICOVOICE_ACCESS_KEY environment variable is not set.")

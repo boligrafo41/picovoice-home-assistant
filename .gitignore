@@ -28,3 +28,8 @@ docker-compose.local.override.yml
 .env
 venv/
 ENV/
+
+#homeassistant
+homeassistant/.storage/auth
+#picovoice
+/docker/picovoice/config

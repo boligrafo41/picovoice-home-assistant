@@ -1,42 +1,69 @@
-2024-07-04 18:00:24.397 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2024-07-04 18:00:24.398 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration nodered which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2024-07-04 18:00:25.026 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
-2024-07-04 18:00:27.723 WARNING (MainThread) [homeassistant.helpers.frame] Detected that custom integration 'hacs' accesses hass.components.frontend. This is deprecated and will stop working in Home Assistant 2024.9, it should be updated to import functions used from frontend directly at custom_components/hacs/frontend.py, line 68: hass.components.frontend.async_register_built_in_panel(, please create a bug report at https://github.com/hacs/integration/issues
-2024-07-04 18:00:33.764 ERROR (MainThread) [homeassistant.components.mqtt.client] Failed to connect to MQTT server due to exception: [Errno 111] Connection refused
-2024-07-04 18:00:40.603 WARNING (MainThread) [zigpy.application] Zigbee channel 20 utilization is 87.33%!
-2024-07-04 18:00:40.603 WARNING (MainThread) [zigpy.application] If you are having problems joining new devices, are missing sensor updates, or have issues keeping devices joined, ensure your coordinator is away from interference sources such as USB 3.0 devices, SSDs, WiFi routers, etc.
-2024-07-04 18:00:40.693 WARNING (MainThread) [homeassistant.helpers.frame] Detected that custom integration 'hacs' accesses hass.helpers.event. This is deprecated and will stop working in Home Assistant 2024.11, it should be updated to import functions used from event directly at custom_components/hacs/base.py, line 642: self.hass.helpers.event.async_track_time_interval(, please create a bug report at https://github.com/hacs/integration/issues
-2024-07-04 18:24:34.531 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 12803
-2024-07-04 18:26:35.926 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 12803
-2024-07-04 18:55:37.520 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 62453
-2024-07-04 19:51:48.515 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4000] Network timeout: No response received within 10s
-2024-07-04 19:53:54.525 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 62453
-2024-07-04 19:58:55.609 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 62453
-2024-07-04 20:00:58.555 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 62453
-2024-07-04 20:12:01.584 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 62453
-2024-07-04 20:22:07.523 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 62453
-2024-07-04 23:29:12.525 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 62453
-2024-07-04 23:31:18.599 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 62453
-2024-07-04 23:34:29.565 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 62453
-2024-07-04 23:44:41.617 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 62453
-2024-07-04 23:53:44.556 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 62453
-2024-07-05 08:20:10.514 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4000] Network timeout: No response received within 10s
-2024-07-05 08:22:30.515 WARNING (MainThread) [homeassistant.components.broadlink.updater] Disconnected from HVAC-HV2 (HY02/HY03 at 192.168.1.88)
-2024-07-05 08:24:32.091 WARNING (MainThread) [homeassistant.components.broadlink.updater] Connected to HVAC-HV2 (HY02/HY03 at 192.168.1.88)
-2024-07-05 08:27:33.597 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 12803
-2024-07-05 08:29:53.514 WARNING (MainThread) [homeassistant.components.broadlink.updater] Disconnected from HVAC-HV2 (HY02/HY03 at 192.168.1.88)
-2024-07-05 08:32:04.120 WARNING (MainThread) [homeassistant.components.broadlink.updater] Connected to HVAC-HV2 (HY02/HY03 at 192.168.1.88)
-2024-07-05 08:42:05.606 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 12803
-2024-07-05 08:49:15.515 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4000] Network timeout: No response received within 10s
-2024-07-05 08:51:21.583 WARNING (MainThread) [homeassistant.components.broadlink.updater] Disconnected from HVAC-HV2 (HY02/HY03 at 192.168.1.88)
-2024-07-05 08:52:22.091 WARNING (MainThread) [homeassistant.components.broadlink.updater] Connected to HVAC-HV2 (HY02/HY03 at 192.168.1.88)
-2024-07-05 09:02:22.603 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 12803
-2024-07-05 10:51:32.516 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4000] Network timeout: No response received within 10s
-2024-07-05 10:56:34.601 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 62207
-2024-07-05 11:00:44.515 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4000] Network timeout: No response received within 10s
-2024-07-05 11:03:04.515 WARNING (MainThread) [homeassistant.components.broadlink.updater] Disconnected from HVAC-HV2 (HY02/HY03 at 192.168.1.88)
-2024-07-05 11:05:14.719 WARNING (MainThread) [homeassistant.components.broadlink.updater] Connected to HVAC-HV2 (HY02/HY03 at 192.168.1.88)
-2024-07-05 11:09:18.015 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 62207
-2024-07-05 15:39:21.529 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 13065
-2024-07-06 00:24:33.567 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 62453
-2024-07-06 01:31:35.589 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 62453
+2024-09-30 11:06:27.094 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2024-09-30 11:06:27.098 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration nodered which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2024-09-30 11:06:29.734 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
+2024-09-30 11:06:46.275 WARNING (MainThread) [homeassistant.helpers.frame] Detected that custom integration 'hacs' accesses hass.components.frontend. This is deprecated and will stop working in Home Assistant 2024.9, it should be updated to import functions used from frontend directly at custom_components/hacs/frontend.py, line 68: hass.components.frontend.async_register_built_in_panel(, please create a bug report at https://github.com/hacs/integration/issues
+2024-09-30 11:06:48.013 ERROR (MainThread) [homeassistant.components.mqtt.client] Failed to connect to MQTT server due to exception: [Errno 111] Connection refused
+2024-09-30 11:06:59.142 WARNING (MainThread) [homeassistant.helpers.frame] Detected that custom integration 'hacs' accesses hass.helpers.event. This is deprecated and will stop working in Home Assistant 2024.11, it should be updated to import functions used from event directly at custom_components/hacs/base.py, line 642: self.hass.helpers.event.async_track_time_interval(, please create a bug report at https://github.com/hacs/integration/issues
+2024-09-30 11:07:32.543 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:08:17.651 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 43145
+2024-09-30 11:08:37.242 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:09:37.619 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:10:57.162 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:12:13.956 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:13:33.405 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:14:49.240 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:15:50.776 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:16:16.147 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:16:54.801 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:17:56.409 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:18:15.955 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0xFCB0)
+2024-09-30 11:18:15.963 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0xFCB0)
+2024-09-30 11:18:15.977 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0xFCB0)
+2024-09-30 11:18:16.005 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0xFCB0)
+2024-09-30 11:18:17.278 ERROR (MainThread) [bellows.ezsp] NCP entered failed state. Requesting APP controller restart
+2024-09-30 11:18:17.278 ERROR (MainThread) [bellows.ezsp] Exception running handler
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/bellows/ezsp/__init__.py", line 494, in handle_callback
+    handler(*args)
+  File "/usr/local/lib/python3.12/site-packages/bellows/zigbee/application.py", line 626, in ezsp_callback_handler
+    self.connection_lost(args[0])
+  File "/usr/local/lib/python3.12/site-packages/zigpy/application.py", line 688, in connection_lost
+    self.listener_event("connection_lost", exc)
+  File "/usr/local/lib/python3.12/site-packages/zigpy/util.py", line 50, in listener_event
+    for listener, include_context in self._listeners.values():
+RuntimeError: dictionary changed size during iteration
+2024-09-30 11:18:17.320 WARNING (MainThread) [zigpy.device] Device <Device model=None manuf=None nwk=0xFCB0 ieee=a4:c1:38:b6:18:a5:0a:1d is_initialized=False> failed to initialize due to unexpected error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/zigpy/device.py", line 205, in initialize
+    await self._initialize()
+  File "/usr/local/lib/python3.12/site-packages/zigpy/util.py", line 131, in retry
+    return await func()
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/zigpy/device.py", line 226, in _initialize
+    await self.get_node_descriptor()
+  File "/usr/local/lib/python3.12/site-packages/zigpy/device.py", line 191, in get_node_descriptor
+    status, _, node_desc = await self.zdo.Node_Desc_req(self.nwk)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/zigpy/device.py", line 339, in request
+    await send_request()
+  File "/usr/local/lib/python3.12/site-packages/zigpy/application.py", line 841, in request
+    await self.send_packet(
+  File "/usr/local/lib/python3.12/site-packages/bellows/zigbee/application.py", line 868, in send_packet
+    status, _ = await self._ezsp.sendUnicast(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/bellows/ezsp/__init__.py", line 215, in _command
+    return await self._protocol.command(name, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/bellows/ezsp/protocol.py", line 77, in command
+    await self._gw.send_data(data)
+  File "/usr/local/lib/python3.12/site-packages/bellows/uart.py", line 57, in send_data
+    await self._transport.send_data(data)
+  File "/usr/local/lib/python3.12/site-packages/bellows/ash.py", line 652, in send_data
+    await self._send_data_frame(
+  File "/usr/local/lib/python3.12/site-packages/bellows/ash.py", line 610, in _send_data_frame
+    await ack_future
+bellows.ash.NcpFailure
+2024-09-30 11:18:18.673 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 43145
+2024-09-30 11:19:07.302 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:20:07.542 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:21:08.342 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
