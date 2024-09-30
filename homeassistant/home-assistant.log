@@ -67,3 +67,80 @@ bellows.ash.NcpFailure
 2024-09-30 11:19:07.302 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
 2024-09-30 11:20:07.542 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
 2024-09-30 11:21:08.342 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:22:08.790 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:23:09.756 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:24:10.618 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:25:12.504 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:26:15.790 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:26:20.687 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 43145
+2024-09-30 11:27:16.437 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:29:32.451 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:30:55.333 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:33:14.368 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:33:21.762 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 43145
+2024-09-30 11:35:00.174 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:36:04.581 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:37:24.936 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:37:50.374 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0xFCB0)
+2024-09-30 11:37:50.384 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0xFCB0)
+2024-09-30 11:37:50.397 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0xFCB0)
+2024-09-30 11:37:50.426 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0xFCB0)
+2024-09-30 11:37:51.697 ERROR (MainThread) [bellows.ezsp] NCP entered failed state. Requesting APP controller restart
+2024-09-30 11:37:51.697 ERROR (MainThread) [bellows.ezsp] Exception running handler
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/bellows/ezsp/__init__.py", line 494, in handle_callback
+    handler(*args)
+  File "/usr/local/lib/python3.12/site-packages/bellows/zigbee/application.py", line 626, in ezsp_callback_handler
+    self.connection_lost(args[0])
+  File "/usr/local/lib/python3.12/site-packages/zigpy/application.py", line 688, in connection_lost
+    self.listener_event("connection_lost", exc)
+  File "/usr/local/lib/python3.12/site-packages/zigpy/util.py", line 50, in listener_event
+    for listener, include_context in self._listeners.values():
+RuntimeError: dictionary changed size during iteration
+2024-09-30 11:37:51.700 WARNING (MainThread) [zigpy.device] Device <Device model=None manuf=None nwk=0xFCB0 ieee=a4:c1:38:b6:18:a5:0a:1d is_initialized=False> failed to initialize due to unexpected error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/zigpy/device.py", line 205, in initialize
+    await self._initialize()
+  File "/usr/local/lib/python3.12/site-packages/zigpy/util.py", line 131, in retry
+    return await func()
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/zigpy/device.py", line 226, in _initialize
+    await self.get_node_descriptor()
+  File "/usr/local/lib/python3.12/site-packages/zigpy/device.py", line 191, in get_node_descriptor
+    status, _, node_desc = await self.zdo.Node_Desc_req(self.nwk)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/zigpy/device.py", line 339, in request
+    await send_request()
+  File "/usr/local/lib/python3.12/site-packages/zigpy/application.py", line 841, in request
+    await self.send_packet(
+  File "/usr/local/lib/python3.12/site-packages/bellows/zigbee/application.py", line 868, in send_packet
+    status, _ = await self._ezsp.sendUnicast(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/bellows/ezsp/__init__.py", line 215, in _command
+    return await self._protocol.command(name, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/bellows/ezsp/protocol.py", line 77, in command
+    await self._gw.send_data(data)
+  File "/usr/local/lib/python3.12/site-packages/bellows/uart.py", line 57, in send_data
+    await self._transport.send_data(data)
+  File "/usr/local/lib/python3.12/site-packages/bellows/ash.py", line 652, in send_data
+    await self._send_data_frame(
+  File "/usr/local/lib/python3.12/site-packages/bellows/ash.py", line 610, in _send_data_frame
+    await ack_future
+bellows.ash.NcpFailure
+2024-09-30 11:38:22.658 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 43145
+2024-09-30 11:38:30.570 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:39:47.236 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:40:50.262 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:41:58.578 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:43:15.605 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:44:30.520 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:45:23.660 ERROR (MainThread) [homeassistant.components.broadlink.updater] Error fetching HVAC-HV2 (HY02/HY03 at 192.168.1.88) data: [Errno -4008] Received data packet check error: Expected a checksum of 255 and received 43145
+2024-09-30 11:46:21.372 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:47:22.244 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:48:24.777 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:49:31.506 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:51:25.386 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:52:31.769 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:53:35.146 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
+2024-09-30 11:55:25.788 WARNING (MainThread) [zigpy.application] Unknown device AddrModeAddress(addr_mode=<AddrMode.NWK: 2>, address=0x69EC)
